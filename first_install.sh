@@ -1,6 +1,6 @@
 echo "Bienvenue, le script va se lancer dans quelques secondes" 
 sleep 3 
-reset
+clean
 #install des paquets
 
 apt update && apt upgrade
@@ -27,7 +27,7 @@ service --status-all
 #-----------------------------------
 #config port iptables
 sleep 2
-reset
+clean
 echo "config port iptable"
 sleep 1
 
@@ -43,7 +43,7 @@ ufw enable
 ufw status
 
 sleep 2 
-reset
+clean
 echo "----------------------"
 echo "finished :) !"
 echo "-----------------------"
