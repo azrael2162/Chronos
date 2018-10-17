@@ -19,6 +19,6 @@ apt install iptables
 apt install ufw 
 apt install git
 #-----------------------------------
-echo Ã"----------------------"
+echo "----------------------"
 echo  " fished  :) ! "
 echo "-----------------------"
