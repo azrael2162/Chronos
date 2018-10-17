@@ -3,10 +3,7 @@ sleep 3
 reset
 #install des paquets
 
-apt ugrade 
-time 60
-apt update
-time 20
+apt update && apt upgrade
 #--------------------------------------
 apt install apache2 
 chmod 777 -R /var/www/html
