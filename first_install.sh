@@ -1,25 +1,10 @@
-  echo   /    \
-   echo  \     \ 
-    echo /    /
-   echo \     
-    echo \   \
- echo _____________  _
-echo "|=============|/A\"
-echo |             | U/
-echo |_____________|_/
- echo \           /
-  echo \_________/
 
-echo "Bienvenue, le script va se lancer dans quelques secondes" 
-sleep 3 
-reset
-#install des paquets
-
-apt ugrade 
-time 60
-apt update
-time 20
 #--------------------------------------
+#update of system
+apt ugrade 
+apt update
+#--------------------------------------
+#install des paquets
 apt install apache2 
 chmod 777 -R /var/www/html
 ls -l /var/www
@@ -34,6 +19,6 @@ apt install iptables
 apt install ufw 
 apt install git
 #-----------------------------------
-echo Ã"----------------------"
-echo  " termine  :) ! Ã"
+echo Ãƒ"----------------------"
+echo  " fished  :) ! "
 echo "-----------------------"
