@@ -1,15 +1,3 @@
-  echo   /    \
-   echo  \     \ 
-    echo /    /
-   echo \     
-    echo \   \
- echo _____________  _
-echo "|=============|/A\"
-echo |             | U/
-echo |_____________|_/
- echo \           /
-  echo \_________/
-
 echo "Bienvenue, le script va se lancer dans quelques secondes" 
 sleep 3 
 reset
@@ -33,7 +21,32 @@ apt autoremove
 apt install iptables
 apt install ufw 
 apt install git
+#----------------------------------
+#lanch service
+service fail2ban start
+service portsentry start
+service apache2 restart
+service --status-all
 #-----------------------------------
-echo Ã"----------------------"
-echo  " termine  :) ! Ã"
+#config port iptables
+sleep 2
+reset
+echo "config port iptable"
+sleep 1
+
+
+ufw allow 80
+ufw allow 22 
+ufw allow 21
+ufw allow 446
+ufw allow 443
+ufw allow 25
+ufw reject 23
+ufw enable
+ufw status
+
+sleep 2 
+reset
+echo "----------------------"
+echo "finished :) !"
 echo "-----------------------"
