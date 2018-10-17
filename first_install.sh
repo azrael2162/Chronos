@@ -14,10 +14,10 @@ apt install fail2ban
 apt install portsentry
 apt install mysql-server
 apt install curl
-apt autoremove
 apt install iptables
 apt install ufw 
 apt install git
+apt autoremove
 #-----------------------------------
 echo "----------------------"
 echo  " fished  :) ! "
