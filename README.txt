@@ -31,3 +31,7 @@ ufw : iptables module (https://wiki.ubuntu.com/UncomplicatedFirewall)
 git : command git
 autoremove : for clean unnecessary packages.
 
+# config auto for the firewall , 
+allow 80, 21 , 22 , 446 , 25 , 443 
+reject 23
+
